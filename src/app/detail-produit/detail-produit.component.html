@@ -1,1 +1,7 @@
-<p>detail-produit works!</p>
+<div *ngIf="produit">
+    <h2>{{ produit.nom | uppercase }}</h2>
+    <img [src]="produit.imageUrl" alt="{{ produit.nom }}">
+    <p>{{ produit.description }}</p>
+    <p>{{ produit.prix | currency:'EUR':'symbol':'1.2-2' }}</p>
+    <button (click)="retourArriere()" class="btn btn-sm btn-secondary">Retour</button>
+  </div>
