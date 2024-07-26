@@ -12,24 +12,45 @@ export class ProduitComponent {
   produits = [
     {
       id: 1,
-      nom: 'Produit 1',
-      description: 'Description du produit 1',
-      prix: 10,
-      imageUrl: 'https://via.placeholder.com/150'
+      nom: 'Réchauffe',
+      description: 'Chauffe-Biberon Électrique Blanc Philips Avent ',
+      prix: 38.46,
+      imageUrl: 'https://www.nenetouti.com/wp-content/uploads/2020/02/Chauffe-biberonPhilips-Avent.jpg'
     },
     {
       id: 2,
-      nom: 'Produit 2',
-      description: 'Description du produit 2',
-      prix: 20,
-      imageUrl: 'https://via.placeholder.com/150'
+      nom: 'Gobelets pré-stérilisés',
+      description: '3 Petites Boîtes de Conservation Mom Easy 30 ml',
+      prix: 4.62,
+      imageUrl: 'https://www.nenetouti.com/wp-content/uploads/2024/07/2.png'
     },
     {
       id: 3,
-      nom: 'Produit 3',
-      description: 'Description du produit 3',
-      prix: 30,
-      imageUrl: 'https://via.placeholder.com/150'
+      nom: 'Bavoirs',
+      description: 'Bavoir en silicone -nettoyable réglable couleur vert/jaune',
+      prix: 5.38,
+      imageUrl: 'https://www.nenetouti.com/wp-content/uploads/2019/05/Capturesilicone.jpg'
+    },
+    {
+      id: 4,
+      nom: 'Bavoirs tablier',
+      description: 'Bavoir Tablier imperméable à manches longues pour enfants (4 coloris)',
+      prix: 4.62,
+      imageUrl: 'https://www.nenetouti.com/wp-content/uploads/2024/03/PHOTO-2024-03-05-12-04-15_1-504x504.jpg'
+    },
+    {
+      id: 5,
+      nom: 'Vêtements garçon 0-2 ans',
+      description: 'Barboteuse noeud Rouge',
+      prix: 9.23,
+      imageUrl: 'https://www.nenetouti.com/wp-content/uploads/2020/01/barboteusegaronblanc.jpg'
+    },
+    {
+      id: 6,
+      nom: 'Vêtements fille 2-7 ans',
+      description: 'Robe_sans_manches',
+      prix: 6.92,
+      imageUrl: 'https://www.nenetouti.com/wp-content/uploads/2019/08/robe_enfant-e1565196318394.jpg'
     }
   ];
   produitSelectionne: any = null;  // Défini la propriété produitSelectionne
