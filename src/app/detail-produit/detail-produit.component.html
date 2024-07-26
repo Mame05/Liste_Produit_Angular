@@ -1,0 +1,18 @@
+  <div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-sm" *ngIf="produit">
+      <div class="card-header">
+        <h2 class="card-title text-center">{{ produit.nom | uppercase }}</h2>
+      </div>
+      <div class="card-body text-center">
+        <img [src]="produit.imageUrl" alt="{{ produit.nom }}" class="card-img-top mb-3">
+        <p class="card-text">{{ produit.description }}</p>
+        <p class="card-text">
+          <strong>{{ produit.prix | currency:'EUR':'symbol':'1.2-2' }}</strong>
+        </p>
+      </div>
+      <div class="card-footer text-center">
+        <button (click)="retourArriere()" class="btn btn-sm btn-secondary">Retour</button>
+      </div>
+    </div>
+  </div>
+  
