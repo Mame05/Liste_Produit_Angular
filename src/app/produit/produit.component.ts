@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import { DetailProduitComponent } from '../detail-produit/detail-produit.component';
+import localeFR from '@angular/common/locales/fr'
+
+registerLocaleData(localeFR, 'fr');
+
 @Component({
   selector: 'app-produit',
   standalone: true,

@@ -1,31 +1,14 @@
-<!--<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-4" *ngFor="let produit of produits">
-      <div class="card mb-4 shadow-sm">
-        <img src="{{ produit.imageUrl }}" class="card-img-top" alt="{{ produit.nom }}">
-        <div class="card-body">
-          <h5 class="card-title">{{ produit.nom | uppercase }}</h5>
-          <p class="card-text">{{ produit.description }}</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <span class="text-muted">{{ produit.prix | currency:'EUR':'symbol':'1.2-2' }}</span>
-            <a href="#" class="btn btn-sm btn-primary">Voir Détails</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
 <div class="container mt-5" *ngIf="!produitSelectionne">
   <div class="row">
+    <h1 class="text-center mb-4">Liste des Produits</h1>
     <div class="col-md-4" *ngFor="let produit of produits">
-      <div class="card mb-4 shadow-sm">
+      <div class="card mb-4 shadow-sm" (click)="afficherDetails(produit)">
         <img [src]="produit.imageUrl" class="card-img-top" alt="{{ produit.nom }}">
         <div class="card-body">
           <h5 class="card-title">{{ produit.nom | uppercase }}</h5>
           <p class="card-text">{{ produit.description }}</p>
           <div class="d-flex justify-content-between align-items-center">
-            <span class="text-muted">{{ produit.prix | currency:'EUR':'symbol':'1.2-2' }}</span>
-            <button (click)="afficherDetails(produit)" class="btn btn-sm btn-primary">Voir Détails</button>
+            <span class="text-muted">{{ produit.prix | currency:'EUR':'symbol':'1.2-2':'fr'}}</span>
           </div>
         </div>
       </div>
